@@ -1,0 +1,98 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {1}Présentation personnelle et du projet}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Rôle du candidat et contexte}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Problématique et objectifs SMART}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Liens utiles}{8}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Cadrage et cahier des charges}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objectifs métier, techniques et pédagogiques}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Cibles et parties prenantes}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Exigences fonctionnelles}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Fonctionnalités « Front Office »}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Fonctionnalités « Back Office »}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}L'utilisateur (public)}{13}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Confidentialité}{13}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Droits d'accès}{14}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Authentification}{14}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}Exigences et choix techniques}{15}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Exigences}{15}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Choix}{15}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Définition du MVP}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Roadmap}{17}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Liens utiles}{18}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Méthodologie et organisation}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Gestion de projet avec GitHub}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}User Stories et estimation de temps}{19}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Versioning GitHub et conventions}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Planification et outils de suivi}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Estimation de temps et planification}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Liens utiles}{25}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Conception fonctionnelle et technique}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Use Cases et diagrammes UML}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Diagrammes de séquence}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Conception de l'interface graphique}{29}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Zoning}{29}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Wireframe}{30}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Maquettage}{30}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Outils de conception et diagrammes}{30}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Charte graphique}{31}{subsection.4.3.5}%
+\contentsline {subsubsection}{Couleurs}{31}{subsection.4.3.5}%
+\contentsline {subsubsection}{Typographie}{31}{subsection.4.3.5}%
+\contentsline {subsubsection}{Logo}{31}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Conception de base de données}{32}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}MCD (Modèle Conceptuel de Données)}{32}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}MLD (Modèle Logique de Données)}{32}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}MPD (Modèle Physique de Données)}{32}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Architecture 3 tiers}{34}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Liens utiles}{36}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Architecture 3 tiers}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Architecture 3 tiers}{37}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Couche Présentation (Frontend)}{37}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Couche Logique Métier (Backend)}{37}{subsection.5.1.2}%
+\contentsline {subsubsection}{Controller}{37}{subsection.5.1.2}%
+\contentsline {subsubsection}{Service}{38}{lstnumber.-6.12}%
+\contentsline {subsubsection}{Repository (DAO)}{38}{lstnumber.-7.15}%
+\contentsline {subsection}{\numberline {5.1.3}Couche Données (Database)}{39}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Communication entre les tiers}{39}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Avantages de l'architecture 3 tiers}{40}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Développement Frontend}{41}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Développement Backend}{43}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Gestion des données}{45}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Liens utiles}{47}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Sécurité applicative et RGPD}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Protection contre les vulnérabilités OWASP}{49}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Authentification et autorisation}{51}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Conformité RGPD}{54}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Liens utiles}{57}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Tests et qualité logicielle}{59}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Stratégie de tests}{59}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Tests de performance}{61}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Qualité du code avec SonarQube}{63}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Liens utiles}{66}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Déploiement et CI/CD}{67}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Containerisation avec Docker}{67}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Pipeline CI/CD avec GitHub Actions}{69}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Documentation et monitoring}{74}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Liens utiles}{78}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Veille technologique et sécurité}{79}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Veille technologique stack}{79}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Bonnes pratiques sécurité}{80}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Application au projet}{81}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Liens utiles}{83}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Bilan et retour d'expérience (REX)}{85}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Objectifs atteints et non atteints}{85}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Difficultés rencontrées et solutions}{85}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Dettes techniques et apprentissages}{86}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Liens utiles}{88}{section.10.4}%
+\contentsline {chapter}{\numberline {11}Conclusion et remerciements}{89}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Synthèse du projet}{89}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Perspectives d'évolution}{90}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Remerciements}{91}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Déploiement et documentation}{91}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Docker}{92}{subsection.11.4.1}%
+\contentsline {subsubsection}{Conteneurisation}{92}{subsection.11.4.1}%
+\contentsline {subsubsection}{Compose}{92}{lstnumber.-49.21}%
+\contentsline {subsection}{\numberline {11.4.2}GitHub (code source)}{93}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.3}CI/CD}{94}{subsection.11.4.3}%
+\contentsline {subsection}{\numberline {11.4.4}SonarQube}{94}{subsection.11.4.4}%
+\contentsline {subsection}{\numberline {11.4.5}Swagger}{95}{subsection.11.4.5}%
+\contentsline {section}{\numberline {11.5}Liens utiles}{97}{section.11.5}%
