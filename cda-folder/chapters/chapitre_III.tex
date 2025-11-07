@@ -6,43 +6,99 @@ Dans cette section, vous devez présenter votre approche de gestion de projet en
 
 \textbf{Votre approche GitHub :} \textit{Le projet Destiny 2 Raid Companion est géré entièrement sur GitHub avec une approche Agile adaptée au développement en solo. L'organisation repose sur GitHub Projects pour le suivi des tâches, les Milestones pour la planification temporelle, et un workflow Git Flow modifié pour assurer la qualité du code.}
 
+\subsection{Adaptation de la méthode Agile au contexte}
+
+\textbf{Pourquoi l'Agile est adapté à ce projet :}
+\begin{itemize}
+    \item \textbf{Projet innovant :} Besoin de s'adapter aux retours utilisateurs rapidement
+    \item \textbf{API tierce complexe :} Nécessité d'itérer sur l'intégration Bungie API
+    \item \textbf{Développement solo :} Flexibilité pour ajuster les priorités selon les blocages
+    \item \textbf{Validation continue :} MVP à tester rapidement avec la communauté Destiny 2
+\end{itemize}
+
+\textbf{Application des principes Agile au quotidien :}
+\begin{itemize}
+    \item \textbf{Itérations courtes :} Sprints de 2 semaines pour maintenir le rythme
+    \item \textbf{Adaptation permanente :} Revue des priorités à chaque sprint planning
+    \item \textbf{Livraison continue :} Déploiement automatique sur environnement de test
+    \item \textbf{Simplicité :} Focus sur les fonctionnalités à plus haute valeur ajoutée
+\end{itemize}
+
+\subsection{Rituels Agile et leur mise en œuvre}
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Rituel} & \textbf{Fréquence} & \textbf{Objectif et mise en œuvre} \\
+\hline
+\textbf{Daily Standup} & Quotidien (10 min) & Point sur avancement, blocages, objectifs journée. Mise à jour GitHub Projects \\
+\hline
+\textbf{Sprint Planning} & Tous les 15 jours & Sélection des issues du backlog, estimation, définition objectifs sprint \\
+\hline
+\textbf{Sprint Review} & Fin de sprint & Démonstration fonctionnalités, validation critères d'acceptation, recueil retours \\
+\hline
+\textbf{Sprint Retrospective} & Fin de sprint & Amélioration processus, identification points à optimiser, actions correctives \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{exemple}
+\textbf{Schéma des rituels Scrum :}
+\begin{verbatim}
+Sprint Planning (2h) ---> Daily Standup (10min) ---> Sprint Review (1h)
+     |                          |                          |
+     |                          |                          |
+     v                          v                          v
+Backlog Refinement         Développement              Sprint Retro (45min)
+     |                          |                          |
+     |                          |                          |
+     +---------> Sprint (15j) <---------+------------------+
+\end{verbatim}
+
+\textbf{Métriques de suivi :}
+\begin{itemize}
+    \item \textbf{Vélocité :} 8-12 story points par sprint
+    \item \textbf{Taux de complétion :} > 85\% des tâches par sprint
+    \item \textbf{Bugs ouverts/fermés :} Ratio < 0.5 (2 bugs fermés pour 1 ouvert)
+    \item \textbf{Lead time :} < 5 jours pour les issues critiques
+\end{itemize}
+
+\textbf{Colonnes du tableau Kanban :}
+\begin{itemize}
+    \item \textbf{Backlog :} Fonctionnalités à développer (triées par priorité)
+    \item \textbf{Sprint Backlog :} Tâches sélectionnées pour le sprint courant
+    \item \textbf{To Do :} Tâches prêtes pour le développement
+    \item \textbf{In Progress :} Tâches en cours (WIP limit: 2)
+    \item \textbf{Review :} Code en attente de validation (tests, revue)
+    \item \textbf{Done :} Fonctionnalités livrées et validées
+\end{itemize}
+\end{exemple}
+
 \subsection{User Stories et estimation de temps}
 
 Dans cette sous-section, vous devez détailler vos user stories avec des estimations de temps réalistes. Chaque user story doit être liée à des commits et des milestones GitHub pour un suivi précis de l'avancement.
 
 \textbf{Vos user stories avec estimations :} \textit{
-\begin{longtable}{p{3cm}p{5cm}p{2cm}}
+\begin{longtable}{p{3cm}p{4cm}p{2cm}p{2cm}}
 \toprule
-\textbf{User Story} & \textbf{Critères d'acceptation} & \textbf{Temps estimé} \\
+\textbf{User Story} & \textbf{Critères d'acceptation} & \textbf{Story Points} & \textbf{Milestone} \\
 \midrule
-En tant que joueur, je veux m'authentifier avec mon compte Bungie & Connexion OAuth fonctionnelle, récupération du profil, gestion des sessions JWT & 5 jours \\
-En tant que joueur, je veux consulter des guides interactifs de raids & Affichage des étapes détaillées, illustrations, stratégies par rôle & 8 jours \\
-En tant que joueur, je veux créer et gérer une escouade & Création d'escouade, invitation de membres, gestion des rôles & 6 jours \\
-En tant que joueur, je veux planifier une session de raid & Calendrier interactif, création d'événement, notifications & 7 jours \\
-En tant que joueur, je veux voir mes statistiques et badges & Profil personnel, historique des raids, système de gamification & 4 jours \\
-En tant qu'administrateur, je veux gérer le contenu des guides & Interface d'administration, édition des guides, validation & 5 jours \\
+En tant que joueur, je veux m'authentifier avec mon compte Bungie & Connexion OAuth fonctionnelle, récupération du profil, gestion des sessions JWT & 5 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+En tant que joueur, je veux consulter des guides interactifs de raids & Affichage des étapes détaillées, illustrations, stratégies par rôle & 8 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+En tant que joueur, je veux créer et gérer une escouade & Création d'escouade, invitation de membres, gestion des rôles & 5 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+En tant que joueur, je veux planifier une session de raid & Calendrier interactif, création d'événement, notifications & 8 & \href{https://github.com/xxx/milestone/2}{v1.1} \\
+En tant que joueur, je veux voir mes statistiques et badges & Profil personnel, historique des raids, système de gamification & 5 & \href{https://github.com/xxx/milestone/2}{v1.1} \\
+En tant qu'administrateur, je veux gérer le contenu des guides & Interface d'administration, édition des guides, validation & 8 & \href{https://github.com/xxx/milestone/3}{v1.2} \\
 \bottomrule
 \end{longtable}}
 
-\begin{exemple}
-\textbf{Schéma des rituels Scrum :}
-\begin{verbatim}
-Sprint Planning ---> Daily Standup ---> Sprint Review
-     |                    |                |
-     |                    |                |
-     v                    v                v
-Sprint Retrospective ---> Sprint ---> Sprint Demo
-\end{verbatim}
-
-\textbf{Colonnes du tableau Kanban :}
+\textbf{Système d'estimation :}
 \begin{itemize}
-    \item \textbf{Backlog :} Fonctionnalités à développer
-    \item \textbf{To Do :} Tâches prêtes pour le sprint
-    \item \textbf{In Progress :} Tâches en cours (WIP limit: 3)
-    \item \textbf{Review :} Code en attente de validation
-    \item \textbf{Done :} Fonctionnalités livrées
+    \item \textbf{1 point :} Tâche simple (< 1 jour)
+    \item \textbf{3 points :} Tâche moyenne (1-2 jours)
+    \item \textbf{5 points :} Tâche complexe (3-4 jours)
+    \item \textbf{8 points :} Tâche très complexe (> 5 jours)
 \end{itemize}
-\end{exemple}
 
 \begin{conseil}
 \textbf{Ce que le jury attend dans cette section :}
@@ -79,26 +135,82 @@ Le versioning GitHub suit le modèle Git Flow avec des branches spécialisées p
 
 Les conventions établies couvrent le nommage des branches, le format des messages de commit, et les templates de Pull Request. Cette standardisation améliore la qualité du code et accélère l'onboarding de nouveaux développeurs.
 
+\subsection{CONTRIBUTING.md et normalisation}
+
+\textbf{Contenu du CONTRIBUTING.md :}
+\begin{itemize}
+    \item \textbf{Environnement :} Setup du projet, pré-requis, installation
+    \item \textbf{Conventions de code :} ESLint, Prettier, standards React/Node.js
+    \item \textbf{Workflow Git :} Processus de création de branches, commits, PR
+    \item \textbf{Testing :} Comment exécuter les tests, couverture attendue
+    \item \textbf{Code Review :} Checklist pour la revue de code
+\end{itemize}
+
+\subsection{Conventions de branches}
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{8cm}|}
+\hline
+\textbf{Type de branche} & \textbf{Convention de nommage} \\
+\hline
+Feature & \texttt{feature/nom-fonctionnalite} ou \texttt{feature/issue-\#123} \\
+Bugfix & \texttt{fix/description-bug} ou \texttt{fix/issue-\#456} \\
+Hotfix & \texttt{hotfix/description-urgente} \\
+Release & \texttt{release/v1.2.3} \\
+Documentation & \texttt{docs/sujet-documentation} \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Conventions de commits}
+
 \begin{exemple}
 \textbf{Schéma Git Flow :}
 \begin{verbatim}
-main -----------------------------------------------
-  |
-  +-- develop --------------------------------------
-       |
-       +-- feature/user-authentication
-       +-- feature/project-management
-       +-- hotfix/critical-bug-fix
+main (protected) -------------------------------
+  |                      |          |
+  |                      |          +-- hotfix/critical-issue
+  |                      |
+  +-- develop (protected) ----------------------
+       |                    |          |
+       |                    |          +-- release/v1.2.0
+       |                    |
+       +-- feature/user-auth
+       +-- feature/raid-guides
+       +-- fix/login-validation
 \end{verbatim}
 
-\textbf{Conventions de commit :}
+\textbf{Conventions de commit (Conventional Commits) :}
 \begin{lstlisting}
-feat: add user authentication system
-fix: resolve login validation issue
-docs: update API documentation
+feat: add OAuth Bungie authentication system
+fix: resolve login token expiration issue
+docs: update API integration guide
 test: add unit tests for user service
-refactor: improve code structure
+refactor: improve raid guide component structure
+style: format code with prettier
+chore: update dependencies to latest versions
 \end{lstlisting}
+
+\textbf{Template de Pull Request :}
+\begin{verbatim}
+## Description
+[Description des changements apportés]
+
+## Issue liée
+[Lien vers l'issue GitHub]
+
+## Type de changement
+- [ ] Correction de bug
+- [ ] Nouvelle fonctionnalité
+- [ ] Modification de configuration
+- [ ] Documentation
+
+## Checklist
+- [ ] Mon code suit les conventions du projet
+- [ ] J'ai ajouté des tests
+- [ ] Les tests passent localement
+- [ ] J'ai mis à jour la documentation
+\end{verbatim}
 \end{exemple}
 
 \begin{conseil}
@@ -127,52 +239,94 @@ La planification combine une roadmap GitHub pour la vision macro et GitHub Proje
 
 La roadmap GitHub permet de communiquer la vision produit et les priorités à long terme. Les milestones et les dépendances facilitent la coordination entre les différentes équipes et la gestion des risques de planning.
 
+\subsection{GitHub Project et Roadmap}
+
+\textbf{Structure du GitHub Project :}
+\begin{itemize}
+    \item \textbf{Vue Kanban :} Suivi visuel de l'état des tâches
+    \item \textbf{Filtres :} Par label, milestone, assigné, statut
+    \item \textbf{Automatisations :} Changement de statut basé sur les PR/issues
+    \item \textbf{Vues personnalisées :} Tableau de bord pour daily standup
+\end{itemize}
+
+\textbf{Roadmap GitHub :}
+\begin{itemize}
+    \item \textbf{Visibilité :} Roadmap publique pour transparence
+    \item \textbf{Milestones :} Dates cibles pour chaque version
+    \item \textbf{Dépendances :} Liens entre les fonctionnalités
+    \item \textbf{Suivi progression :} Avancement visuel par milestone
+\end{itemize}
+
 \begin{exemple}
 \textbf{Extrait de roadmap GitHub :}
 \begin{verbatim}
-Phase 1: Conception (4 semaines)
-+-- Analyse des besoins (1 semaine)
-+-- Conception technique (2 semaines)
-+-- Validation architecture (1 semaine)
+Phase 1: MVP (Oct 2025 - Mai 2026)
++-- Sprint 1: Setup & Auth (4 semaines)
+    +-- Environnement dev (1 semaine) [Issue #1]
+    +-- Authentification Bungie (2 semaines) [Issue #2]
+    +-- Base de données (1 semaine) [Issue #3]
+    
++-- Sprint 2: Core Features (6 semaines)
+    +-- Guides interactifs (3 semaines) [Issue #4]
+    +-- Gestion escouades (2 semaines) [Issue #5]
+    +-- Calendrier raids (1 semaine) [Issue #6]
 
-Phase 2: Développement MVP (8 semaines)
-+-- Backend API (4 semaines)
-+-- Frontend React (4 semaines)
-+-- Tests intégration (2 semaines)
+Phase 2: Améliorations (Juin - Déc 2026)
++-- Sprint 3: Gamification [Issue #7]
++-- Sprint 4: Mobile & Analytics [Issue #8]
 \end{verbatim}
 
 \textbf{Configuration GitHub Projects :}
 \begin{itemize}
-    \item \textbf{Colonnes :} Backlog, To Do, In Progress, Review, Done
-    \item \textbf{WIP Limits :} 3 tâches max en cours par développeur
+    \item \textbf{Colonnes :} Backlog, Sprint Planning, In Progress, Review, Done
+    \item \textbf{WIP Limits :} 2 tâches max en cours par développeur
     \item \textbf{Policies :} PR obligatoire pour merge en develop
-    \item \textbf{Automation :} Mise à jour automatique des statuts
+    \item \textbf{Automation :} Mise à jour automatique des statuts via GitHub Actions
 \end{itemize}
 \end{exemple}
+
+\subsection{Liaison User Stories - Tests - Milestones}
+
+\textbf{Intégration complète dans GitHub :}
+\begin{itemize}
+    \item \textbf{User Stories :} Créées comme issues avec template dédié
+    \item \textbf{Tests :} Issues liées pour les scénarios de test
+    \item \textbf{Milestones :} Regroupement logique par version
+    \item \textbf{Labels :} Complexité (S, M, L, XL), type (bug, feature, docs)
+\end{itemize}
+
+\textbf{Workflow de validation :}
+\begin{enumerate}
+    \item Issue créée avec critères d'acceptation
+    \item Branche feature développée avec tests associés
+    \item Pull Request avec validation des tests automatisés
+    \item Revue de code et validation manuelle si nécessaire
+    \item Merge et déploiement automatique en environnement de test
+\end{enumerate}
 
 \begin{focusgithub}
 \textbf{Git Flow et conventions :}
 \begin{itemize}
     \item \textbf{Branches :} main, develop, feature/*, release/*, hotfix/*
-    \item \textbf{PR Template :} Description, tests, checklist
-    \item \textbf{CODEOWNERS :} Validation obligatoire par senior dev
-    \item \textbf{Protection Rules :} Pas de push direct sur main/develop
+    \item \textbf{PR Template :} Description, tests, checklist validation
+    \item \textbf{CODEOWNERS :} Validation automatique des règles
+    \item \textbf{Protection Rules :} Pas de push direct sur main/develop, status checks requis
 \end{itemize}
 
 \textbf{GitHub Projects Kanban :}
 \begin{itemize}
     \item \textbf{Colonnes :} Backlog, Sprint Planning, In Progress, Review, Done
-    \item \textbf{WIP Limits :} 2 features max en développement
-    \item \textbf{Automation :} Mise à jour statut via labels
-    \item \textbf{Metrics :} Cycle time, lead time, throughput
+    \item \textbf{WIP Limits :} 2 features max en développement simultané
+    \item \textbf{Automation :} Mise à jour statut via labels et milestones
+    \item \textbf{Metrics :} Cycle time, lead time, throughput, burndown chart
 \end{itemize}
 
 \textbf{Roadmap et milestones :}
 \begin{itemize}
-    \item \textbf{Milestones :} v1.0 (Q2), v1.1 (Q3), v2.0 (Q4)
-    \item \textbf{Dependencies :} Backend \myarrow Frontend \myarrow Tests
-    \item \textbf{Risks :} Intégration externe, performance
-    \item \textbf{Success Metrics :} Velocity, quality gates
+    \item \textbf{Milestones :} v1.0 (Mai 2026), v1.1 (Juillet 2026), v1.2 (Sept 2026), v2.0 (Janvier 2027)
+    \item \textbf{Dependencies :} Backend → Frontend → Tests → Déploiement
+    \item \textbf{Risks :} Complexité API Bungie, performance en charge
+    \item \textbf{Success Metrics :} Velocity stable, qualité code, satisfaction utilisateur
 \end{itemize}
 \end{focusgithub}
 
@@ -220,31 +374,50 @@ Déploiement & CI/CD & jours & 3 & 2 & 6 \\
 \bottomrule
 \end{longtable}
 
-\textbf{Votre estimation :} \textit{
-\begin{longtable}{p{3cm}p{2.5cm}p{1.5cm}p{1.5cm}}
+\textbf{Votre estimation détaillée :} \textit{
+\begin{longtable}{p{3cm}p{2.5cm}p{1.5cm}p{1.5cm}p{1.5cm}}
 \toprule
-\textbf{Fonctionnalité} & \textbf{Phase} & \textbf{Jours estimés} & \textbf{Milestone} \\
+\textbf{Fonctionnalité} & \textbf{Phase} & \textbf{Story Points} & \textbf{Jours estimés} & \textbf{Milestone} \\
 \midrule
-Environnement & Setup & 5 & Octobre \\
-Authentification Bungie & Backend & 5 & Novembre \\
-Base de données & Backend & 4 & Novembre \\
-API Escouades & Backend & 6 & Décembre \\
-Guides interactifs & Frontend & 8 & Janvier \\
-Calendrier raids & Frontend & 7 & Février \\
-Profils joueurs & Frontend & 4 & Février \\
-API Destiny 2 & Intégration & 6 & Mars \\
-Recommandations équipements & Intégration & 4 & Mars \\
-Tests unitaires & Qualité & 5 & Avril \\
-Tests E2E & Qualité & 4 & Avril \\
-Dockerisation & Déploiement & 3 & Mai \\
-CI/CD & Déploiement & 4 & Mai \\
-Documentation & Livraison & 4 & Mai \\
+Environnement de développement & Setup & 3 & 3 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+Authentification Bungie OAuth & Backend & 5 & 5 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+Base de données PostgreSQL & Backend & 3 & 3 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+API Gestion escouades & Backend & 5 & 5 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+Guides interactifs raids & Frontend & 8 & 8 & \href{https://github.com/xxx/milestone/1}{MVP v1.0} \\
+Calendrier raids & Frontend & 5 & 5 & \href{https://github.com/xxx/milestone/2}{v1.1} \\
+Profils joueurs & Frontend & 3 & 3 & \href{https://github.com/xxx/milestone/2}{v1.1} \\
+Intégration API Destiny 2 & Intégration & 8 & 8 & \href{https://github.com/xxx/milestone/2}{v1.1} \\
+Recommandations équipements & Fonctionnalité & 5 & 5 & \href{https://github.com/xxx/milestone/3}{v1.2} \\
+Tests unitaires et intégration & Qualité & 8 & 8 & \href{https://github.com/xxx/milestone/3}{v1.2} \\
+Tests E2E & Qualité & 5 & 5 & \href{https://github.com/xxx/milestone/3}{v1.2} \\
+Dockerisation & Déploiement & 3 & 3 & \href{https://github.com/xxx/milestone/4}{v1.3} \\
+CI/CD & Déploiement & 5 & 5 & \href{https://github.com/xxx/milestone/4}{v1.3} \\
+Documentation technique & Livraison & 3 & 3 & \href{https://github.com/xxx/milestone/4}{v1.3} \\
 \midrule
-\textbf{Total} & & \textbf{65 jours} & \\
-\textbf{Avec marge 20\%} & & \textbf{78 jours} & \\
+\textbf{Total} & & \textbf{70} & \textbf{70 jours} & \\
+\textbf{Avec marge 20\%} & & \textbf{84} & \textbf{84 jours} & \\
 \bottomrule
 \end{longtable}}
 \end{exemple}
+
+\subsection{Métriques de suivi et amélioration continue}
+
+\textbf{Métriques collectées :}
+\begin{itemize}
+    \item \textbf{Vélocité :} Nombre de story points complétés par sprint
+    \item \textbf{Burndown chart :} Progression vers l'objectif du sprint
+    \item \textbf{Lead time :} Temps entre création et fermeture d'une issue
+    \item \textbf{Cycle time :} Temps de développement effectif
+    \item \textbf{Taux de bugs :} Nombre de bugs rapportés vs fonctionnalités livrées
+\end{itemize}
+
+\textbf{Amélioration continue :}
+\begin{itemize}
+    \item \textbf{Rétrospectives :} Identification points d'amélioration processus
+    \item \textbf{Ajustements :} Adaptation planning basée sur la vélocité réelle
+    \item \textbf{Qualité code :} Suivi couverture tests, dette technique
+    \item \textbf{Satisfaction :} Retours utilisateurs sur fonctionnalités livrées
+\end{itemize}
 
 \begin{conseil}
 \textbf{Ce que le jury attend dans cette section :}
@@ -281,6 +454,8 @@ Documentation & Livraison & 4 & Mai \\
 \section{Liens utiles}
 
 \begin{itemize}
+    \item GitHub Project: \url{https://github.com/xxx/projects/1}
+    \item CONTRIBUTING.md: \url{https://github.com/xxx/CONTRIBUTING.md}
     \item GitHub Flow/PRs: \url{https://docs.github.com/pull-requests}
     \item Git Flow: \url{https://bit.ly/gitflow-atlassian}
     \item GitHub Projects: \url{https://bit.ly/github-projects}
@@ -288,4 +463,5 @@ Documentation & Livraison & 4 & Mai \\
     \item GitHub Milestones: \url{https://bit.ly/github-milestones}
     \item User Stories: \url{https://www.mountaingoatsoftware.com/agile/user-stories}
     \item Estimation de temps: \url{https://bit.ly/time-estimation}
+    \item Conventional Commits: \url{https://www.conventionalcommits.org}
 \end{itemize}
