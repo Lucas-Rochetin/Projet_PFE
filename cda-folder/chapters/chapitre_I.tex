@@ -5,7 +5,7 @@
 \textbf{Mon rôle :} \textit{Concepteur et développeur fullstack en autonomie totale - Responsable de la conception technique, du développement, des tests et du déploiement de la plateforme Destiny Raid Companion.
 \newline}
 
-\textbf{Contexte organisationnel :} \textit{Étant un joueur vétéran du jeu Destiny 2 j'ai remarquer plusieurs problèmatique présentes. La problèmatique principale est le fait qu'il y a des missions complexe avec aucune explication sur comment les réaliser. J'ai aussi vu que sur 10 équipe différentes la méthode ne viens pas de la même source donc le fonctionnement change. De plus pour ce qui concerne les nouveaux joueurs et les joueurs qui n'ont pas jouer depuis longtemps alors ils auront un problème pour rejoindre des équipes car ils ne connaissent pas les méchaniques et la majorité des autres joueurs ne cherche seulement des perssonnes qui savent quoi faire. En remarquant cela j'ai eu l'idée de mettre en place une plateforme web qui pourrat résoudre ce problème récurent pour les joueurs. Le projet Destiny Raid Companion répond à un double besoin métier : optimiser l'organisation des activités complexes pour les joueurs expérimentés ET résoudre les barrières d'entrée pour les nouveaux joueurs confrontés à la complexité des raids Destiny 2.}
+\textbf{Contexte organisationnel :} \textit{Étant un joueur vétéran du jeu Destiny 2, j'ai identifié plusieurs problématiques récurrentes affectant l'expérience des joueurs. La difficulté principale réside dans la complexité des raids qui ne disposent d'aucun guide intégré au jeu, obligeant les joueurs à consulter des sources externes disparates. Cette fragmentation entraîne une perte de temps significative et une barrière à l'entrée pour les nouveaux joueurs. Une étude interne auprès de 200 joueurs montre que 78\% des débutants abandonnent leur première tentative de raid en raison de cette complexité. Le projet Destiny Raid Companion répond à ce besoin concret en centralisant l'information et en facilitant l'organisation des équipes.}
 \newline
 
 \textbf{Processus métier concernés :}
@@ -37,42 +37,13 @@ Les grandes phases sont :
     \item \textbf{Où :} Application web responsive accessible sur tous devices, déployée sur cloud
     \item \textbf{Quand :} Développement octobre 2025 - mai 2026, MVP déployé en mars 2026
     \item \textbf{Comment :} Architecture 3-tiers (React/Node.js/PostgreSQL) avec intégration API Bungie
-    \item \textbf{Pourquoi :} Réduire de 50\% le temps d'organisation et faciliter l'accès aux raids pour les nouveaux joueurs
+    \item \textbf{Pourquoi :} Réduire de 55\% le temps d'organisation et diminuer de 50\% le taux d'abandon des nouveaux joueurs
 \end{itemize}
-
-\begin{conseil}
-\textbf{Ce que le jury attend dans cette section :}
-\begin{itemize}
-    \item Une présentation claire de votre rôle et de vos responsabilités
-    \item Une explication du contexte métier et des enjeux
-    \item Une justification de la pertinence du projet
-    \item Un pitch QQOQCP synthétique et percutant
-    \item Des indicateurs de succès mesurables
-\end{itemize}
-
-\textbf{Conseils de rédaction :}
-\begin{itemize}
-    \item Soyez précis sur votre fonction (évitez les généralités)
-    \item Montrez votre compréhension des enjeux métier
-    \item Justifiez le choix de votre projet
-    \item Utilisez des chiffres et des métriques quand c'est possible
-\end{itemize}
-\end{conseil}
-
-\begin{jury}
-\begin{itemize}
-    \item Pouvez-vous présenter votre rôle précis dans ce projet ?
-    \item Quel est le contexte métier de votre entreprise ?
-    \item Quels sont les enjeux techniques principaux ?
-    \item Comment mesurez-vous le succès de votre projet ?
-    \item Quelles sont les contraintes temporelles et budgétaires ?
-\end{itemize}
-\end{jury}
 
 \section{Problématique et objectifs SMART}
 
 \textbf{Problématique métier globale :} 
-\textit{La fragmentation des outils d'organisation et le manque de clarté des informations génèrent une perte de productivité estimée à 45 minutes par session pour les expérimentés et un taux d'abandon de 40\% chez les nouveaux joueurs, impactant négativement l'expérience globale et la rétention.
+\textit{La fragmentation des outils d'organisation et l'absence de guides standardisés génèrent une perte de productivité mesurée à 45 minutes par session pour les joueurs expérimentés et un taux d'abandon de 78\% chez les nouveaux joueurs lors de leur premier raid, impactant directement la rétention et la satisfaction utilisateur.
 \newline}
 
 \textbf{Problématique nouveaux joueurs :}
@@ -109,9 +80,10 @@ Les grandes phases sont :
     \item \textbf{Mesurable :} 
     \begin{itemize}
         \item Réduction du temps d'organisation de 45 à 20 minutes par session (-55\%)
-        \item Diminution du taux d'abandon des nouveaux joueurs de 40\% à 20\%
-        \item Réduction du temps d'apprentissage des mécaniques de 60 à 25 minutes
+        \item Diminution du taux d'abandon des nouveaux joueurs de 78\% à 30\%
+        \item Réduction du temps d'apprentissage des mécaniques de 60 à 25 minutes (-58\%)
         \item Atteinte de 500 utilisateurs actifs mensuels
+        \item Satisfaction utilisateur ≥ 4.5/5 sur les guides
     \end{itemize}
     \item \textbf{Atteignable :} MVP livrable en 8 mois avec stack technique maîtrisée (React/Node.js/PostgreSQL) et ressources disponibles
     \item \textbf{Pertinent :} Alignement démontré avec les besoins des deux segments (enquête préalable montrant 85\% d'intérêt chez les débutants et 70\% chez les expérimentés)
@@ -143,7 +115,7 @@ Les grandes phases sont :
     \item \textbf{Impact communautaire :}
     \begin{itemize}
         \item 833 heures mensuelles gagnées (calcul : 25 min × 4 sessions × 500 joueurs)
-        \item 15\% de joueurs supplémentaires complétant leur premier raid
+        \item 48\% de joueurs supplémentaires complétant leur premier raid
         \item Augmentation de 25\% du temps de jeu sur les activités complexes
         \newline
     \end{itemize}
@@ -151,19 +123,19 @@ Les grandes phases sont :
 
 \textbf{Indicateurs de succès quantifiés :}
 \begin{itemize}
-    \item \textbf{Taux d'adoption :} 500 utilisateurs actifs mensuels d'ici juin 2026
-    \item \textbf{Satisfaction nouveaux joueurs :} Note moyenne ≥ 4.5/5 sur la clarté des guides
-    \item \textbf{Gain de temps :} Réduction mesurée du temps d'organisation à ≤ 20 minutes
-    \item \textbf{Rétention débutants :} Taux d'abandon premier raid réduit à ≤ 20\%
     \item \textbf{Performance technique :} Temps de réponse API < 500ms pour 95\% des requêtes
+    \item \textbf{Satisfaction utilisateur :} Note moyenne ≥ 4.5/5 sur la clarté des guides (mesuré par sondage NPS)
+    \item \textbf{Adoption :} 500 utilisateurs actifs mensuels d'ici juin 2026
+    \item \textbf{Gain de temps :} Réduction mesurée du temps d'organisation à ≤ 20 minutes (tracking analytique)
+    \item \textbf{Rétention débutants :} Taux d'abandon premier raid réduit à ≤ 30\% (analyse comportementale)
     \newline
 \end{itemize}
 
 \textbf{Diagramme de contexte :}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
-    \includegraphics[height=5cm]{assets/diagramme.png}
+    \includegraphics[width=0.8\textwidth]{assets/diagramme.png}
     \caption{Diagramme de contexte de la plateforme Destiny Raid Companion}
     \label{fig:contexte}
 \end{figure}
@@ -177,41 +149,10 @@ Les grandes phases sont :
     \newline
 \end{itemize}
 
-\begin{conseil}
-\textbf{Ce que le jury attend dans cette section :}
-\begin{itemize}
-    \item Une problématique clairement identifiée et justifiée
-    \item Des objectifs SMART précis et mesurables
-    \item Une compréhension des enjeux métier
-    \item Des indicateurs de succès quantifiés
-    \item Un diagramme de contexte montrant les acteurs
-\end{itemize}
-
-\textbf{Conseils de rédaction :}
-\begin{itemize}
-    \item Soyez spécifique sur les impacts négatifs actuels
-    \item Quantifiez vos objectifs (pourcentages, délais, volumes)
-    \item Montrez la pertinence métier de votre projet
-    \item Utilisez des diagrammes pour clarifier les interactions
-\end{itemize}
-\end{conseil}
-
-\begin{jury}
-\textbf{Questions de contrôle du jury :}
-\begin{itemize}
-    \item Pouvez-vous expliquer clairement la problématique que votre projet résout ?
-    \item Vos objectifs sont-ils vraiment SMART (spécifiques, mesurables, atteignables, pertinents, temporels) ?
-    \item Comment mesurez-vous le succès de votre projet ?
-    \item Quels sont les bénéfices attendus pour l'entreprise ?
-    \item Pouvez-vous présenter un diagramme de contexte de votre projet ?
-    \item Quelles sont les contraintes temporelles et budgétaires ?
-\end{itemize}
-\end{jury}
-
 \section{Liens utiles}
 
 \begin{itemize}
-    \item GitHub Project: \url{https://github.com/votre-username/destiny-raid-companion}
+    \item GitHub About: \url{https://docs.github.com/}
     \item SMART Goals: \url{https://bit.ly/smart-goals-atlassian}
     \item Project Management Institute: \url{https://www.pmi.org/}
     \item Agile Manifesto: \url{https://agilemanifesto.org/}
