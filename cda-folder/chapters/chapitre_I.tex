@@ -140,13 +140,17 @@ Les grandes phases sont :
     \label{fig:contexte}
 \end{figure}
 
-\textbf{Flux principaux :}
 \begin{itemize}
-    \item \textbf{Flux nouveau joueur :} Authentification -> Guide débutant -> Recherche équipe bienveillante -> Session d'apprentissage
-    \item \textbf{Flux joueur expérimenté :} Authentification -> Création escouade -> Planification rapide -> Gestion équipe
-    \item \textbf{Flux données :} API Bungie -> Cache Redis -> Base PostgreSQL -> Frontend React
-    \item \textbf{Flux matching :} Algorithmes de matching débutants/expérimentés -> Suggestions d'équipes
-    \newline
+    \item \textbf{Centre :} La plateforme Destiny Raid Companion avec ses composants principaux
+    \item \textbf{Périphérie :} Les systèmes externes et acteurs interagissant avec la plateforme
+    \item \textbf{Flux principaux :}
+    \begin{itemize}
+        \item Données joueurs depuis l'API Bungie (synchronisation profil)
+        \item Authentification via OAuth Bungie
+        \item Notifications vers les utilisateurs (email, in-app)
+        \item Données de jeu en temps réel depuis les serveurs Bungie
+    \end{itemize}
+    \item \textbf{Périmètre clair :} La plateforme centralise les fonctionnalités mais délègue l'authentification et les données de jeu à Bungie
 \end{itemize}
 
 \section{Liens utiles}
